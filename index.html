@@ -13,5 +13,52 @@
     <title>Frontend Mentor | Password generator app</title>
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>Password Generator</h1>
+      <div class="app">
+        <div class="password-input-wrapper">
+          <input type="text" placeholder="P4$5W0rD!" />
+          <img src="./assets/images/icon-copy.svg" alt="" />
+        </div>
+        <div class="password-settings-wrapper">
+          <div class="character-length-wrapper">
+            <h2>Character Length</h2>
+            <p class="character-num">0</p>
+          </div>
+          <input class="character-range-input" type="range" />
+          <div class="password-selector-wrapper">
+            <div class="selector-wrapper">
+              <input class="checkbox-input" id="uppercase" type="checkbox" />
+              <label for="uppercase">Include Uppercase Letters</label>
+            </div>
+            <div class="selector-wrapper">
+              <input class="checkbox-input" id="lowercase" type="checkbox" />
+              <label for="lowercase">Include Lowercase Letters</label>
+            </div>
+            <div class="selector-wrapper">
+              <input class="checkbox-input" id="numbers" type="checkbox" />
+              <label for="numbers">Include Numbers</label>
+            </div>
+            <div class="selector-wrapper">
+              <input class="checkbox-input" id="symbols" type="checkbox" />
+              <label for="symbols">Include Symbols</label>
+            </div>
+          </div>
+          <div class="strength-wrapper">
+            <h2>STRENGTH</h2>
+            <div class="strength-marker-wrapper">
+              <div class="strength-marker"></div>
+              <div class="strength-marker"></div>
+              <div class="strength-marker"></div>
+              <div class="strength-marker"></div>
+            </div>
+          </div>
+          <button>
+            GENERATE <img src="./assets/images/icon-arrow-right.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
